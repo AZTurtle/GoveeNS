@@ -8,7 +8,7 @@ MIT License
 import udi_interface
 import sys
 import time
-from nodes import sensor
+from nodes import deviceNode
 import rest
 
 LOGGER = udi_interface.LOGGER
@@ -24,23 +24,28 @@ Individually gets the new samples for each sensor attached.
 TODO: Add checking for disconnected sensors and gateways
 '''
 
-class GatewayNode(udi_interface.Node):
+class Controller(udi_interface.Node):
     id = 'ctl'
     drivers = [
             {'driver': 'ST', 'value': 1, 'uom': 2}
             ]
 
-    def __init__(self, polyglot, parent, address, name, limit):
-        super(GatewayNode, self).__init__(polyglot, parent, address, name)
+    def __init__(self, polyglot, parent, address, name):
+        super(Controller, self).__init__(polyglot, parent, address, name)
 
         self.poly = polyglot
         self.count = 0
         self.n_queue = []
-        self.limit = limit
         self.created = False
         
         polyglot.subscribe(polyglot.STOP, self.stop)
         polyglot.subscribe(polyglot.ADDNODEDONE, self.node_queue)
+        self.poly.subscribe(self.poly.POLL, self.poll)
+
+        polyglot.addNode(self)
+        self.wait_for_node_done()
+
+        self.createDevices()
 
     def node_queue(self, data):
         self.n_queue.append(data['address'])
@@ -48,20 +53,21 @@ class GatewayNode(udi_interface.Node):
     def wait_for_node_done(self):
         while len(self.n_queue) == 0:
             time.sleep(0.1)
-        self.n_queue.pop()
+        self.n_queue.pop() 
 
-    def defineSensors(self, sensors):
 
-        self.sensors = sensors
+    def createDevices(self):
+        devices = rest.get('devices')['data']['devices']
 
-        for i in self.sensors.values():
-            try:
-                self.poly.addNode(i)
-                self.wait_for_node_done()
-            except Exception as e:
-                LOGGER.error('Error when creating sensor: {}'.format(e))
-        
-        self.poly.subscribe(self.poly.POLL, self.poll)
+        num = 0
+        for device in devices:
+            address = f'child_{num}'
+
+            node = deviceNode.Light(self.poly, self.address, address, device['deviceName'])
+
+            self.poly.addNode(node)
+
+            num += 1
 
 
     def poll(self, polltype):
