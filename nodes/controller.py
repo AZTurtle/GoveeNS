@@ -66,21 +66,9 @@ class Controller(udi_interface.Node):
 
 
     def poll(self, polltype):
-        if 'shortPoll' in polltype:
-            res = rest.post('samples', {
-                'sensors': list(self.sensors.keys()),
-                'limit': self.limit
-            })
+        devices = rest.get('devices')['data']['devices']
+        LOGGER.debug(devices)
 
-            if res:
-                sensor_data = res['sensors']
-                for k in sensor_data:
-                    data = sensor_data[k][0]
-                    self.sensors[k].setDriver('GV0', float(data['temperature']), True, True)
-                    self.sensors[k].setDriver('GV1', float(data['humidity']), True, True)
-
-    '''
-    '''
     def stop(self):
 
         nodes = self.poly.getNodes()
