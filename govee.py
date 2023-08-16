@@ -42,6 +42,8 @@ if __name__ == "__main__":
                     mainNode = controller.Controller(polyglot, 'controller', 'controller', 'Govee Controller')
 
                     polyglot.addNode(mainNode)
+                    time.sleep(0.5)
+                    mainNode.createDevices()
                 else:
                     # No key provided
                     polyglot.Notices['API'] = 'Missing API Key'
