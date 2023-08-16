@@ -28,8 +28,6 @@ if __name__ == "__main__":
         polyglot.start()
 
         Parameters = Custom(polyglot, 'customparams')
-
-        mainNode = controller.Controller(polyglot, 'controller', 'controller', 'Govee Controller')
         
         def parameterHandler(params):
             Parameters.load(params)
@@ -39,10 +37,11 @@ if __name__ == "__main__":
 
                 if key != '':
                     polyglot.Notices.clear()
-                    rest.init(Parameters['API Key'])
+                    rest.init(key)
 
-                    if 'controller' in polyglot.getNodes():
-                        mainNode.createDevices()
+                    mainNode = controller.Controller(polyglot, 'controller', 'controller', 'Govee Controller')
+
+                    polyglot.addNode(mainNode)
                 else:
                     # No key provided
                     polyglot.Notices['API'] = 'Missing API Key'
@@ -59,8 +58,6 @@ if __name__ == "__main__":
 
         polyglot.setCustomParamsDoc()
         polyglot.updateProfile()
-
-        polyglot.addNode(mainNode)
 
         # Just sit and wait for events
         polyglot.ready()
