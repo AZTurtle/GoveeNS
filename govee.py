@@ -36,9 +36,8 @@ if __name__ == "__main__":
                 key = Parameters['API Key']
 
                 if key:
+                    polyglot.Notices.clear()
                     rest.init(Parameters['API Key'])
-                    
-                    controller.Controller(polyglot, 'controller', 'controller', 'Govee Controller')
                 else:
                     # No key provided
                     polyglot.Notices['API'] = 'Missing API Key'
@@ -55,6 +54,8 @@ if __name__ == "__main__":
 
         polyglot.setCustomParamsDoc()
         polyglot.updateProfile()
+
+        controller.Controller(polyglot, 'controller', 'controller', 'Govee Controller')
 
         # Just sit and wait for events
         polyglot.ready()

@@ -36,11 +36,10 @@ class Controller(udi_interface.Node):
         self.poly = polyglot
         self.count = 0
         self.n_queue = []
-        self.created = False
         
         polyglot.subscribe(polyglot.STOP, self.stop)
         polyglot.subscribe(polyglot.ADDNODEDONE, self.node_queue)
-        self.poly.subscribe(self.poly.POLL, self.poll)
+        polyglot.subscribe(self.poly.POLL, self.poll)
 
         polyglot.addNode(self)
         self.wait_for_node_done()
