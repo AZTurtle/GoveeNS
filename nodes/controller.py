@@ -52,6 +52,7 @@ class Controller(udi_interface.Node):
 
     def createDevices(self):
         devices = rest.get('devices')['data']['devices']
+        LOGGER.debug(devices)
 
         num = 0
         for device in devices:
