@@ -58,7 +58,7 @@ class Controller(udi_interface.Node):
         for device in devices:
             address = f'child_{num}'
 
-            node = deviceNode.Light(self.poly, self.address, address, device['deviceName'])
+            node = deviceNode.Light(self.poly, self.address, address, device['deviceName'], device['device'])
 
             self.poly.addNode(node)
 
@@ -70,7 +70,6 @@ class Controller(udi_interface.Node):
         LOGGER.debug(devices)
 
     def stop(self):
-
         nodes = self.poly.getNodes()
         for node in nodes:
             if node != 'controller':
