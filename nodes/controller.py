@@ -41,11 +41,6 @@ class Controller(udi_interface.Node):
         polyglot.subscribe(polyglot.ADDNODEDONE, self.node_queue)
         polyglot.subscribe(self.poly.POLL, self.poll)
 
-        polyglot.addNode(self)
-        self.wait_for_node_done()
-
-        self.createDevices()
-
     def node_queue(self, data):
         self.n_queue.append(data['address'])
 
