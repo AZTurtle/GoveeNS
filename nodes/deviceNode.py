@@ -34,14 +34,17 @@ class Light(udi_interface.Node):
 
     def poll(self, pollType):
         if 'shortPoll' in pollType:
-            state = rest.query('devices/state', {
-                'device': self.api_address,
-                'model': self.model
-            })['data']
+            self.updateState()
 
-            self.setDriver('ST', state['properties'][0]['online'], True, True)
-            powerState = state['properties'][1]['powerState']
-            self.setDriver('GV0', int(powerState == 'on'), True, True)
+    def updateState(self):
+        state = rest.query('devices/state', {
+            'device': self.api_address,
+            'model': self.model
+        })['data']
+
+        self.setDriver('ST', state['properties'][0]['online'], True, True)
+        powerState = state['properties'][1]['powerState']
+        self.setDriver('GV0', int(powerState == 'on'), True, True)
 
     def setState(self, state):
         rest.put('devices/control', {
@@ -55,8 +58,11 @@ class Light(udi_interface.Node):
 
     def on(self, command):
         self.setState('on')
+        self.updateState()
+
 
     def off(self, command):
         self.setState('off')
+        self.updateState()
     
     commands = {'DON': on, 'DOFF': off}
