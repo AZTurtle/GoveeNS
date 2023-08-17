@@ -42,7 +42,8 @@ def query(url, params):
 def put(url, params):
     res = requests.put(API_URL + url, headers={
         'accept': 'application/json',
-        'Govee-API-Key': api_key
+        'Govee-API-Key': api_key,
+        'Retry-After': 10
     }, json=params)
 
     LOGGER.debug(res)

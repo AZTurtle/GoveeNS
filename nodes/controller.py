@@ -62,8 +62,6 @@ class Controller(udi_interface.Node):
             self.poly.addNode(node)
             self.wait_for_node_done()
 
-            node.setDriver('GV0', int())
-
             num += 1
 
 
