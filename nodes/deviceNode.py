@@ -68,4 +68,4 @@ class Light(udi_interface.Node):
         time.sleep(1)
         self.updateState()
     
-    commands = {'DON': on, 'DOFF': off}
+    commands = {'DFON': on, 'DFOF': off}
