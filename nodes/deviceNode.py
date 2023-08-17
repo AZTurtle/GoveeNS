@@ -59,5 +59,4 @@ class Light(udi_interface.Node):
     def off(self):
         self.setState('off')
     
-    commands = {'DON': on}
-    commands = {'DOFF': off}
+    commands = {'DON': on, 'DOFF': off}
