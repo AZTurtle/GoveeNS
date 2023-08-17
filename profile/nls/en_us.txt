@@ -6,3 +6,5 @@ ND-child-NAME = Govee Device
 ND-child-ICON = Lamp
 ST-str-ST-NAME = Sensor Active
 ST-str-GV0-NAME = State
+CMD-str-DON-NAME = On
+CMD-str-DOFF-NAME = Off
