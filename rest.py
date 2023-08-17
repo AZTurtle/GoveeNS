@@ -36,6 +36,6 @@ def query(url, params):
 
 def put(url, params):
     return requests.put(API_URL + url, headers={
-        'Content-Type': 'application/json',
+        'accept': 'application/json',
         'Govee-API-Key': api_key
-    }, params=params)
+    }, json=params).json()
