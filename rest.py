@@ -29,13 +29,23 @@ def get(url):
     return res.json()
 
 def query(url, params):
-    return requests.get(API_URL + url, headers={
+    res = requests.get(API_URL + url, headers={
         'accept': 'application/json',
         'Govee-API-Key': api_key
-    }, params=params).json()
+    }, params=params)
+
+    LOGGER.debug(res)
+    LOGGER.debug(res.json())
+
+    return res.json()
 
 def put(url, params):
-    return requests.put(API_URL + url, headers={
+    res = requests.put(API_URL + url, headers={
         'accept': 'application/json',
         'Govee-API-Key': api_key
-    }, json=params).json()
+    }, json=params)
+
+    LOGGER.debug(res)
+    LOGGER.debug(res.json())
+
+    return res.json()
