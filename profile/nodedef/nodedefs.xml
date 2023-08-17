@@ -13,8 +13,8 @@
     <cmds>
       <sends />
       <accepts>
-        <cmd id="DON">
-        <cmd id="DOFF">
+        <cmd id="DON" />
+        <cmd id="DOFF" />
       </accepts>
     </cmds>
   </nodeDef>
