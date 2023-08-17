@@ -19,13 +19,23 @@ def init(key):
     api_key = key
 
 def get(url):
-    return requests.get(API_URL + url, headers={
+    res = requests.get(API_URL + url, headers={
         'accept': 'application/json',
         'Govee-API-Key': api_key
-    }).json()
+    })
+
+    LOGGER.debug(res)
+
+    return res.json()
 
 def query(url, params):
     return requests.get(API_URL + url, headers={
         'accept': 'application/json',
         'Govee-API-Key': api_key
     }, params=params).json()
+
+def put(url, data):
+    return requests.get(API_URL + url, headers={
+        'Content-Type': 'application/json',
+        'Govee-API-Key': api_key
+    }, data=data).json()

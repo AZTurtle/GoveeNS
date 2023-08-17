@@ -39,5 +39,19 @@ class Light(udi_interface.Node):
                 'model': self.model
             })['data']
 
-            self.setDriver('ST', state['properties'][0], True, True)
-            self.setDriver('GV0', state['properties'][1], True, True)
+            self.setDriver('ST', state['properties'][0]['online'], True, True)
+            powerState = state['properties'][1]['powerState']
+            self.setDriver('GV0', powerState == 'on', True, True)
+
+    def setState(self, state):
+        rest.put('devices/control', {
+            'device': self.api_address,
+            'model': self.model,
+            'cmd': {
+                'name': 'turn',
+                'value': state
+            }
+        })
+    
+    commands = {'DON': setState('on')}
+    commands = {'DOFF': setState('off')}

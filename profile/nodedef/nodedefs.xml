@@ -10,5 +10,12 @@
       <st id="ST" editor="bool" />
       <st id="GV0" editor="bool" />
 	  </sts>
+    <cmds>
+      <sends />
+      <accepts>
+        <cmd id="DON">
+        <cmd id="DOFF">
+      </accepts>
+    </cmds>
   </nodeDef>
 </nodeDefs>
