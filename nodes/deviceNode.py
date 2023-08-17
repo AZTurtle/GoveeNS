@@ -8,6 +8,7 @@ MIT License
 import udi_interface
 import sys
 import rest
+import time
 
 LOGGER = udi_interface.LOGGER
 Custom = udi_interface.Custom
@@ -58,11 +59,13 @@ class Light(udi_interface.Node):
 
     def on(self, command):
         self.setState('on')
+        time.sleep(1)
         self.updateState()
 
 
     def off(self, command):
         self.setState('off')
+        time.sleep(1)
         self.updateState()
     
     commands = {'DON': on, 'DOFF': off}
