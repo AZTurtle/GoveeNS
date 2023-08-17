@@ -38,4 +38,4 @@ def put(url, data):
     return requests.get(API_URL + url, headers={
         'Content-Type': 'application/json',
         'Govee-API-Key': api_key
-    }, data=data).json()
+    }, json=data).json()
