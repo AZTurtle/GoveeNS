@@ -1,25 +1,19 @@
 
-# SensorPush (c) 2023 James Bennett
+# GoveeNS (c) 2023 James Bennett
 
-A node server for providing integration with SensorPush G1 WiFi Gateways and their associated sensors.
-Uses OAuth2 for authentication with your SensorPush account and should not require any more interaction.
-Still in early developement, looking for feedback!
+A node server for integration with Govee devices
 
 ## Installation
 
-All that is required to run is Authenticating with your SensorPush account through the "Authenticate" tab.
+All that is required to run is acquiring an API key from Govee and pasting it in the custom parameters
 
 ### Node Settings
 The settings for this node are:
 
 #### Short Poll
-   * How often to request temperature samples
+   * How often to update devices
 #### Long Poll
-   * How often to request a new access token (WARNING - Increasing this too much may lead to having to authenticate again)
-
-#### Number of Samples
-   * Number of Samples: Not used currently, but will define how many samples the rest api requests every shortPoll.
-
+   * Not used
 
 ## Requirements
 
@@ -28,5 +22,5 @@ The settings for this node are:
 
 # Release Notes
 
-- 0.0.1 8/7/23
+- 0.0.1 8/16/23
    - Initial release for testing
