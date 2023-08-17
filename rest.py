@@ -50,7 +50,7 @@ def put(url, params):
         code = res.status_code
 
         if code == 429:
-            time.sleep(int(res.header['Retry-After']) + 2)
+            time.sleep(int(res.headers['Retry-After']) + 2)
 
 
     return res.json()
