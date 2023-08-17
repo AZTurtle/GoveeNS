@@ -7,6 +7,7 @@ MIT License
 
 import requests
 import udi_interface
+import time
 
 API_URL = 'https://developer-api.govee.com/v1/'
 api_key = ''
@@ -39,11 +40,17 @@ def query(url, params):
     return res.json()
 
 def put(url, params):
-    res = requests.put(API_URL + url, headers={
-        'accept': 'application/json',
-        'Govee-API-Key': api_key
-    }, json=params)
+    code = 0
 
-    LOGGER.debug(res.headers.items())
+    while code != 200:
+        res = requests.put(API_URL + url, headers={
+            'accept': 'application/json',
+            'Govee-API-Key': api_key
+        }, json=params)
+        code = res.status_code
+
+        if code == 429:
+            time.sleep(int(res.header['Retry-After']) + 2)
+
 
     return res.json()
