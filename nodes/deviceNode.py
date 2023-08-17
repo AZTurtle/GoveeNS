@@ -1,5 +1,5 @@
 """
-SensorPush Node Server
+Govee Node Server
 Copyright (C) 2023 James Bennett
 
 MIT License
