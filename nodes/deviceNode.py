@@ -41,7 +41,7 @@ class Light(udi_interface.Node):
 
             self.setDriver('ST', state['properties'][0]['online'], True, True)
             powerState = state['properties'][1]['powerState']
-            self.setDriver('GV0', powerState == 'on', True, True)
+            self.setDriver('GV0', int(powerState == 'on'), True, True)
 
     def setState(self, state):
         rest.put('devices/control', {
