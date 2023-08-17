@@ -1,10 +1,8 @@
-ND-ctl-NAME = SensorPush Controller
-ND-ctl-ICON = Input
+ND-ctl-NAME = Govee Controller
+ND-ctl-ICON = Lamp
 ST-ctl-ST-NAME = NodeServer Online
 
-ND-child-NAME = SensorPush Sensor
-ND-child-ICON = TempSensor
+ND-child-NAME = Govee Device
+ND-child-ICON = Lamp
 ST-str-ST-NAME = Sensor Active
-ST-str-GV0-NAME = Temperature
-ST-str-GV1-NAME = Humidity
-ST-str-GV2-NAME = Battery Voltage
+ST-str-GV0-NAME = State

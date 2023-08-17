@@ -23,3 +23,9 @@ def get(url):
         'accept': 'application/json',
         'Govee-API-Key': api_key
     }).json()
+
+def query(url, params):
+    return requests.get(API_URL + url, headers={
+        'accept': 'application/json',
+        'Govee-API-Key': api_key
+    }, params=params).json()

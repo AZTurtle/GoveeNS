@@ -3,16 +3,4 @@
 	<editor id="bool">
 		<range uom="2" subset="0,1" />
 	</editor>
-	<editor id="raw">
-		<range uom="56" min="-10000" max="10000" prec="2" /> 
-	</editor>
-	<editor id="temp">
-		<range uom="17" min="-10000" max="10000" prec="2" /> 
-	</editor>
-	<editor id="percent">
-		<range uom="51" min="-100" max="100" prec="2" /> 
-	</editor>
-	<editor id="voltage">
-		<range uom="72" min="0" max="100" prec="2" /> 
-	</editor>
 </editors>

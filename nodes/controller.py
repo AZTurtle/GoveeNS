@@ -52,22 +52,27 @@ class Controller(udi_interface.Node):
 
     def createDevices(self):
         devices = rest.get('devices')['data']['devices']
-        LOGGER.debug(devices)
 
         num = 0
         for device in devices:
             address = f'child_{num}'
 
-            node = deviceNode.Light(self.poly, self.address, address, device['deviceName'], device['device'])
+            node = deviceNode.Light(self.poly, self.address, address, device['deviceName'], device['device'], device['model'])
 
             self.poly.addNode(node)
+            self.wait_for_node_done()
+
+            node.setDriver('GV0', int())
 
             num += 1
 
 
-    def poll(self, polltype):
-        devices = rest.get('devices')['data']['devices']
-        LOGGER.debug(devices)
+    def poll(self, pollType):
+        if 'shortPoll' in pollType:
+            # Update devices
+            return
+
+        return
 
     def stop(self):
         nodes = self.poly.getNodes()
