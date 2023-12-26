@@ -62,11 +62,6 @@ if __name__ == "__main__":
             else:
                 polyglot.Notices['API'] = 'Missing API Key Parameter'
             
-            
-        '''
-        Handles authorization by using OAuth2 and sensorpush's login portal
-        '''
-
         polyglot.subscribe(polyglot.CUSTOMPARAMS, parameterHandler)
         polyglot.subscribe(polyglot.ADDNODEDONE, node_queue)
 
