@@ -12,12 +12,12 @@
     "profile_version": "0.0.1",
     "credits": [
     	{
-    		"title": "Example Node Server for ISY/Polyglot",
-    		"author": "Bob Paauwe",
-    		"version": "1.0.1",
-    		"date": "August 11, 2021",
-    		"source": "https://github.com/UniversalDevicesInc/udi-example3-poly",
-			"license": "https://github.com/UniversalDevicesInc/udi-example3-poly/LICENSE"
+    		"title": "SensorPushNS",
+    		"author": "James Bennett",
+    		"version": "0.0.1",
+    		"date": "December 26, 2023",
+    		"source": "https://github.com/AZTurtle/GoveeNS",
+			"license": "https://github.com/AZTurtle/GoveeNS/LICENSE"
 		}
 	]
 }
