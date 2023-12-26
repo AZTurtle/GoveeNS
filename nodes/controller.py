@@ -27,7 +27,7 @@ TODO: Add checking for disconnected sensors and gateways
 class Controller(udi_interface.Node):
     id = 'ctl'
     drivers = [
-            {'driver': 'ST', 'value': 1, 'uom': 2}
+            {'driver': 'ST', 'value': 1, 'uom': 25}
             ]
 
     def __init__(self, polyglot, parent, address, name):

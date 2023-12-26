@@ -20,8 +20,8 @@ It's just a node for storing data, no actions.
 class Light(udi_interface.Node):
     id = 'child'
     drivers = [
-            {'driver': 'ST', 'value': 1, 'uom': 2},
-            {'driver': 'GV0', 'value': 0, 'uom': 2}
+            {'driver': 'ST', 'value': 1, 'uom': 25},
+            {'driver': 'GV0', 'value': 0, 'uom': 25}
             ]
 
     def __init__(self, polyglot, parent, address, name, api_address, model):
