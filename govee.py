@@ -18,6 +18,18 @@ import time
 LOGGER = udi_interface.LOGGER
 Custom = udi_interface.Custom
 
+n_queue = []
+
+def node_queue(data):
+    n_queue.append(data['address'])
+
+
+def wait_for_node_done():
+    while len(n_queue) == 0:
+        time.sleep(0.1)
+    n_queue.pop() 
+
+
 '''
 Main function for generating nodes at beginning of server
 '''
@@ -42,7 +54,7 @@ if __name__ == "__main__":
                     mainNode = controller.Controller(polyglot, 'controller', 'controller', 'Govee Controller')
 
                     polyglot.addNode(mainNode)
-                    time.sleep(2)
+                    wait_for_node_done()
                     mainNode.createDevices()
                 else:
                     # No key provided
@@ -56,6 +68,7 @@ if __name__ == "__main__":
         '''
 
         polyglot.subscribe(polyglot.CUSTOMPARAMS, parameterHandler)
+        polyglot.subscribe(polyglot.ADDNODEDONE, node_queue)
 
 
         polyglot.setCustomParamsDoc()
