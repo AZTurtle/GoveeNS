@@ -43,7 +43,7 @@ class Light(udi_interface.Node):
             'model': self.model
         })['data']
 
-        self.setDriver('ST', int(state['properties'][0]['online']), True, True)
+        self.setDriver('ST', int(state['properties'][0]['online'] == 'true'), True, True)
         powerState = state['properties'][1]['powerState']
         self.setDriver('GV0', int(powerState == 'on'), True, True)
 
