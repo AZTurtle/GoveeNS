@@ -20,12 +20,19 @@ def init(key):
     api_key = key
 
 def get(url):
-    res = requests.get(API_URL + url, headers={
-        'accept': 'application/json',
-        'Govee-API-Key': api_key
-    })
+    code = 0
 
-    LOGGER.debug(res)
+    while code != 200:
+        res = requests.get(API_URL + url, headers={
+            'accept': 'application/json',
+            'Govee-API-Key': api_key
+        })
+        code = res.status_code
+
+        LOGGER.debug(res)
+
+        if code == 429:
+            time.sleep(int(res.headers['Retry-After']) + 1)
 
     return res.json()
 
