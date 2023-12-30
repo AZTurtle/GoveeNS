@@ -29,7 +29,7 @@ def get(url):
         })
         code = res.status_code
 
-        LOGGER.debug(res.json())
+        LOGGER.debug(res.headers)
 
         if code == 429:
             time.sleep(int(res.headers['Retry-After']) + 1)
