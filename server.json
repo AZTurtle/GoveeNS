@@ -9,12 +9,12 @@
     "shortPoll": "60",
     "longPoll": "3600",
 	"logLevel": "WARNING",
-    "profile_version": "0.1.0",
+    "profile_version": "0.1.2",
     "credits": [
     	{
     		"title": "SensorPushNS",
     		"author": "James Bennett",
-    		"version": "0.1.1",
+    		"version": "0.1.2",
     		"date": "December 26, 2023",
     		"source": "https://github.com/AZTurtle/GoveeNS",
 			"license": "https://github.com/AZTurtle/GoveeNS/LICENSE"
