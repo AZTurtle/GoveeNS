@@ -5168,3 +5168,618 @@ requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 2025-05-10 17:11:33.476 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_5 :: GV0 to 1 UOM 25
 2025-05-10 17:11:33.538 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_10 :: GV0 to 1 UOM 25
 2025-05-10 17:11:33.581 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_12 :: GV0 to 0 UOM 25
+2025-05-10 17:12:31.775 MQTT       udi_interface.interface DEBUG    interface:_message: QUEUING incoming message shortPoll
+2025-05-10 17:12:31.775 Command    udi_interface.interface DEBUG    interface:_parseInput: DEQUEING shortPoll
+2025-05-10 17:12:31.775 Command    udi_interface.interface DEBUG    interface:_handleInput: PROCESS shortPoll message {} from Polyglot
+2025-05-10 17:12:32.063 Thread-117 (poll) udi_interface.node DEBUG    node:setDriver: child_0:Office Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:12:32.064 Thread-117 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.064 Thread-123 (poll) udi_interface.node DEBUG    node:setDriver: child_6:Office Light Bars Reporting set ST to 1 to Polyglot
+2025-05-10 17:12:32.064 Thread-117 (poll) udi_interface.node DEBUG    node:setDriver: child_0:Office Floor Lamp Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:12:32.064 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_0', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.064 Thread-123 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.065 Thread-117 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.065 Thread-118 (poll) udi_interface.node DEBUG    node:setDriver: child_1:Master Bed Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:12:32.066 Thread-123 (poll) udi_interface.node DEBUG    node:setDriver: child_6:Office Light Bars Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:12:32.067 Thread-124 (poll) udi_interface.node DEBUG    node:setDriver: child_7:Guest Room Floor Up Reporting set ST to 1 to Polyglot
+2025-05-10 17:12:32.067 Thread-121 (poll) udi_interface.node DEBUG    node:setDriver: child_4:Gaming Desk LED Strip Reporting set ST to 1 to Polyglot
+2025-05-10 17:12:32.067 Thread-118 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.067 Thread-123 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.067 Thread-124 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.067 Thread-121 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.067 Thread-118 (poll) udi_interface.node DEBUG    node:setDriver: child_1:Master Bed Floor Lamp Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:12:32.068 Thread-124 (poll) udi_interface.node DEBUG    node:setDriver: child_7:Guest Room Floor Up Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:12:32.068 Thread-121 (poll) udi_interface.node DEBUG    node:setDriver: child_4:Gaming Desk LED Strip Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:12:32.068 Thread-118 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.068 Thread-124 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:12:32.068 Thread-121 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.075 Thread-130 (poll) udi_interface.node DEBUG    node:setDriver: child_13:Office Floor Lamp (G) Reporting set ST to 1 to Polyglot
+2025-05-10 17:12:32.075 Thread-125 (poll) udi_interface.node DEBUG    node:setDriver: child_8:Guest Room Floor Base Reporting set ST to 1 to Polyglot
+2025-05-10 17:12:32.076 Thread-120 (poll) udi_interface.node DEBUG    node:setDriver: child_3:Office Glide Hexa Reporting set ST to 1 to Polyglot
+2025-05-10 17:12:32.076 Thread-119 (poll) udi_interface.node DEBUG    node:setDriver: child_2:Guest Room Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:12:32.076 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_6', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.076 Thread-130 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.076 Thread-125 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.076 Thread-120 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.076 Thread-119 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.077 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_0', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.077 Thread-130 (poll) udi_interface.node DEBUG    node:setDriver: child_13:Office Floor Lamp (G) Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:12:32.077 Thread-125 (poll) udi_interface.node DEBUG    node:setDriver: child_8:Guest Room Floor Base Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:12:32.077 Thread-120 (poll) udi_interface.node DEBUG    node:setDriver: child_3:Office Glide Hexa Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:12:32.077 Thread-119 (poll) udi_interface.node DEBUG    node:setDriver: child_2:Guest Room Floor Lamp Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:12:32.078 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_1', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.078 Thread-130 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:12:32.078 Thread-125 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:12:32.080 Thread-128 (poll) udi_interface.node DEBUG    node:setDriver: child_11:Guest Room Cabinet Top Reporting set ST to 1 to Polyglot
+2025-05-10 17:12:32.080 Thread-129 (poll) udi_interface.node DEBUG    node:setDriver: child_12:James Room Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:12:32.080 Thread-122 (poll) udi_interface.node DEBUG    node:setDriver: child_5:Family Room TV Back Reporting set ST to 1 to Polyglot
+2025-05-10 17:12:32.080 Thread-120 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.080 Thread-119 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.080 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_6', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.081 Thread-131 (poll) udi_interface.node DEBUG    node:setDriver: child_14:Living Room Cabinet Reporting set ST to 1 to Polyglot
+2025-05-10 17:12:32.082 Thread-128 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.082 Thread-129 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.082 Thread-122 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.082 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_7', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.082 Thread-131 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.083 Thread-128 (poll) udi_interface.node DEBUG    node:setDriver: child_11:Guest Room Cabinet Top Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:12:32.083 Thread-129 (poll) udi_interface.node DEBUG    node:setDriver: child_12:James Room Floor Lamp Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:12:32.083 Thread-122 (poll) udi_interface.node DEBUG    node:setDriver: child_5:Family Room TV Back Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:12:32.083 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_4', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.083 Thread-131 (poll) udi_interface.node DEBUG    node:setDriver: child_14:Living Room Cabinet Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:12:32.083 Thread-128 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.083 Thread-129 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:12:32.083 Thread-122 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.084 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_1', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.084 Thread-131 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.085 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_7', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.085 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_4', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.085 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_13', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.085 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_8', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.086 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_3', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.086 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_2', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.086 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_13', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.086 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_8', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.086 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_3', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.087 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_2', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.087 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_11', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.087 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_12', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.087 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_5', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.088 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_14', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.088 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_11', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.088 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_12', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.088 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_5', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.089 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_14', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.091 Thread-126 (poll) udi_interface.node DEBUG    node:setDriver: child_9:Guest Room Floor Top Reporting set ST to 1 to Polyglot
+2025-05-10 17:12:32.091 Thread-127 (poll) udi_interface.node DEBUG    node:setDriver: child_10:Guest Room Floor Lower Reporting set ST to 1 to Polyglot
+2025-05-10 17:12:32.091 Thread-126 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.091 Thread-127 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.091 Thread-126 (poll) udi_interface.node DEBUG    node:setDriver: child_9:Guest Room Floor Top Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:12:32.091 Thread-127 (poll) udi_interface.node DEBUG    node:setDriver: child_10:Guest Room Floor Lower Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:12:32.092 Thread-126 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.092 Thread-127 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:12:32.093 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_0 :: ST to 1 UOM 25
+2025-05-10 17:12:32.099 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_9', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.100 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_10', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.100 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_9', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.100 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_10', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:12:32.145 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_6 :: ST to 1 UOM 25
+2025-05-10 17:12:32.241 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_0 :: GV0 to 1 UOM 25
+2025-05-10 17:12:32.290 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_1 :: ST to 1 UOM 25
+2025-05-10 17:12:32.335 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_6 :: GV0 to 1 UOM 25
+2025-05-10 17:12:32.384 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_7 :: ST to 1 UOM 25
+2025-05-10 17:12:32.431 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_4 :: ST to 1 UOM 25
+2025-05-10 17:12:32.507 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_1 :: GV0 to 1 UOM 25
+2025-05-10 17:12:32.556 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_7 :: GV0 to 0 UOM 25
+2025-05-10 17:12:32.599 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_4 :: GV0 to 1 UOM 25
+2025-05-10 17:12:32.642 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_13 :: ST to 1 UOM 25
+2025-05-10 17:12:32.642 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_8 :: ST to 1 UOM 25
+2025-05-10 17:12:32.731 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_3 :: ST to 1 UOM 25
+2025-05-10 17:12:32.788 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_2 :: ST to 1 UOM 25
+2025-05-10 17:12:32.833 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_13 :: GV0 to 0 UOM 25
+2025-05-10 17:12:32.886 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_8 :: GV0 to 0 UOM 25
+2025-05-10 17:12:32.932 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_3 :: GV0 to 1 UOM 25
+2025-05-10 17:12:33.004 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_2 :: GV0 to 1 UOM 25
+2025-05-10 17:12:33.055 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_11 :: ST to 1 UOM 25
+2025-05-10 17:12:33.095 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_12 :: ST to 1 UOM 25
+2025-05-10 17:12:33.135 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_5 :: ST to 1 UOM 25
+2025-05-10 17:12:33.184 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_14 :: ST to 1 UOM 25
+2025-05-10 17:12:33.228 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_11 :: GV0 to 1 UOM 25
+2025-05-10 17:12:33.282 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_12 :: GV0 to 0 UOM 25
+2025-05-10 17:12:33.325 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_5 :: GV0 to 1 UOM 25
+2025-05-10 17:12:33.383 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_14 :: GV0 to 1 UOM 25
+2025-05-10 17:12:33.431 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_9 :: ST to 1 UOM 25
+2025-05-10 17:12:33.479 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_10 :: ST to 1 UOM 25
+2025-05-10 17:12:33.529 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_9 :: GV0 to 1 UOM 25
+2025-05-10 17:12:33.589 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_10 :: GV0 to 1 UOM 25
+2025-05-10 17:13:31.776 MQTT       udi_interface.interface DEBUG    interface:_message: QUEUING incoming message shortPoll
+2025-05-10 17:13:31.776 Command    udi_interface.interface DEBUG    interface:_parseInput: DEQUEING shortPoll
+2025-05-10 17:13:31.776 Command    udi_interface.interface DEBUG    interface:_handleInput: PROCESS shortPoll message {} from Polyglot
+2025-05-10 17:13:32.059 Thread-136 (poll) udi_interface.node DEBUG    node:setDriver: child_3:Office Glide Hexa Reporting set ST to 1 to Polyglot
+2025-05-10 17:13:32.059 Thread-136 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.059 Thread-136 (poll) udi_interface.node DEBUG    node:setDriver: child_3:Office Glide Hexa Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:13:32.059 Thread-136 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.062 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_3', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.062 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_3', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.071 Thread-134 (poll) udi_interface.node DEBUG    node:setDriver: child_1:Master Bed Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:13:32.071 Thread-134 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.072 Thread-134 (poll) udi_interface.node DEBUG    node:setDriver: child_1:Master Bed Floor Lamp Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:13:32.072 Thread-134 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.073 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_1', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.074 Thread-135 (poll) udi_interface.node DEBUG    node:setDriver: child_2:Guest Room Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:13:32.074 Thread-133 (poll) udi_interface.node DEBUG    node:setDriver: child_0:Office Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:13:32.075 Thread-143 (poll) udi_interface.node DEBUG    node:setDriver: child_10:Guest Room Floor Lower Reporting set ST to 1 to Polyglot
+2025-05-10 17:13:32.075 Thread-142 (poll) udi_interface.node DEBUG    node:setDriver: child_9:Guest Room Floor Top Reporting set ST to 1 to Polyglot
+2025-05-10 17:13:32.076 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_1', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.076 Thread-135 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.076 Thread-133 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.077 Thread-147 (poll) udi_interface.node DEBUG    node:setDriver: child_14:Living Room Cabinet Reporting set ST to 1 to Polyglot
+2025-05-10 17:13:32.077 Thread-145 (poll) udi_interface.node DEBUG    node:setDriver: child_12:James Room Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:13:32.078 Thread-141 (poll) udi_interface.node DEBUG    node:setDriver: child_8:Guest Room Floor Base Reporting set ST to 1 to Polyglot
+2025-05-10 17:13:32.078 Thread-144 (poll) udi_interface.node DEBUG    node:setDriver: child_11:Guest Room Cabinet Top Reporting set ST to 1 to Polyglot
+2025-05-10 17:13:32.079 Thread-143 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.079 Thread-142 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.079 Thread-135 (poll) udi_interface.node DEBUG    node:setDriver: child_2:Guest Room Floor Lamp Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:13:32.079 Thread-133 (poll) udi_interface.node DEBUG    node:setDriver: child_0:Office Floor Lamp Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:13:32.079 Thread-147 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.079 Thread-145 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.079 Thread-141 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.080 Thread-144 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.080 Thread-143 (poll) udi_interface.node DEBUG    node:setDriver: child_10:Guest Room Floor Lower Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:13:32.080 Thread-142 (poll) udi_interface.node DEBUG    node:setDriver: child_9:Guest Room Floor Top Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:13:32.080 Thread-135 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.080 Thread-133 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.080 Thread-147 (poll) udi_interface.node DEBUG    node:setDriver: child_14:Living Room Cabinet Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:13:32.080 Thread-145 (poll) udi_interface.node DEBUG    node:setDriver: child_12:James Room Floor Lamp Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:13:32.080 Thread-141 (poll) udi_interface.node DEBUG    node:setDriver: child_8:Guest Room Floor Base Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:13:32.080 Thread-144 (poll) udi_interface.node DEBUG    node:setDriver: child_11:Guest Room Cabinet Top Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:13:32.081 Thread-146 (poll) udi_interface.node DEBUG    node:setDriver: child_13:Office Floor Lamp (G) Reporting set ST to 1 to Polyglot
+2025-05-10 17:13:32.081 Thread-143 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.081 Thread-142 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.082 Thread-147 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.082 Thread-145 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:13:32.082 Thread-141 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:13:32.082 Thread-144 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.082 Thread-146 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.083 Thread-146 (poll) udi_interface.node DEBUG    node:setDriver: child_13:Office Floor Lamp (G) Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:13:32.083 Thread-146 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:13:32.089 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_2', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.090 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_0', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.090 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_10', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.090 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_9', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.090 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_14', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.092 Thread-138 (poll) udi_interface.node DEBUG    node:setDriver: child_5:Family Room TV Back Reporting set ST to 1 to Polyglot
+2025-05-10 17:13:32.092 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_3 :: ST to 1 UOM 25
+2025-05-10 17:13:32.093 Thread-138 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.093 Thread-140 (poll) udi_interface.node DEBUG    node:setDriver: child_7:Guest Room Floor Up Reporting set ST to 1 to Polyglot
+2025-05-10 17:13:32.094 Thread-137 (poll) udi_interface.node DEBUG    node:setDriver: child_4:Gaming Desk LED Strip Reporting set ST to 1 to Polyglot
+2025-05-10 17:13:32.094 Thread-139 (poll) udi_interface.node DEBUG    node:setDriver: child_6:Office Light Bars Reporting set ST to 1 to Polyglot
+2025-05-10 17:13:32.094 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_12', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.094 Thread-138 (poll) udi_interface.node DEBUG    node:setDriver: child_5:Family Room TV Back Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:13:32.094 Thread-140 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.094 Thread-137 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.094 Thread-139 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.095 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_8', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.095 Thread-138 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.095 Thread-140 (poll) udi_interface.node DEBUG    node:setDriver: child_7:Guest Room Floor Up Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:13:32.095 Thread-137 (poll) udi_interface.node DEBUG    node:setDriver: child_4:Gaming Desk LED Strip Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:13:32.095 Thread-139 (poll) udi_interface.node DEBUG    node:setDriver: child_6:Office Light Bars Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:13:32.095 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_11', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.097 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_2', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.096 Thread-137 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.096 Thread-139 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:13:32.096 Thread-140 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:13:32.097 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_0', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.098 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_10', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.098 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_9', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.098 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_14', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.098 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_12', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.099 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_8', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.099 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_11', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.099 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_13', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.099 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_13', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.100 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_5', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.100 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_7', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.100 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_4', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.100 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_6', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.101 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_5', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.101 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_4', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.101 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_6', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.101 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_7', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:13:32.141 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_3 :: GV0 to 1 UOM 25
+2025-05-10 17:13:32.190 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_1 :: ST to 1 UOM 25
+2025-05-10 17:13:32.282 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_1 :: GV0 to 1 UOM 25
+2025-05-10 17:13:32.330 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_2 :: ST to 1 UOM 25
+2025-05-10 17:13:32.381 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_0 :: ST to 1 UOM 25
+2025-05-10 17:13:32.421 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_10 :: ST to 1 UOM 25
+2025-05-10 17:13:32.474 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_9 :: ST to 1 UOM 25
+2025-05-10 17:13:32.515 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_14 :: ST to 1 UOM 25
+2025-05-10 17:13:32.584 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_12 :: ST to 1 UOM 25
+2025-05-10 17:13:32.624 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_8 :: ST to 1 UOM 25
+2025-05-10 17:13:32.682 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_11 :: ST to 1 UOM 25
+2025-05-10 17:13:32.724 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_2 :: GV0 to 1 UOM 25
+2025-05-10 17:13:32.779 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_0 :: GV0 to 1 UOM 25
+2025-05-10 17:13:32.824 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_10 :: GV0 to 1 UOM 25
+2025-05-10 17:13:32.882 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_9 :: GV0 to 1 UOM 25
+2025-05-10 17:13:32.922 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_14 :: GV0 to 1 UOM 25
+2025-05-10 17:13:32.976 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_12 :: GV0 to 0 UOM 25
+2025-05-10 17:13:33.025 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_8 :: GV0 to 0 UOM 25
+2025-05-10 17:13:33.086 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_11 :: GV0 to 1 UOM 25
+2025-05-10 17:13:33.131 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_13 :: ST to 1 UOM 25
+2025-05-10 17:13:33.178 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_13 :: GV0 to 0 UOM 25
+2025-05-10 17:13:33.224 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_5 :: ST to 1 UOM 25
+2025-05-10 17:13:33.286 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_7 :: ST to 1 UOM 25
+2025-05-10 17:13:33.327 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_4 :: ST to 1 UOM 25
+2025-05-10 17:13:33.378 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_6 :: ST to 1 UOM 25
+2025-05-10 17:13:33.426 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_5 :: GV0 to 1 UOM 25
+2025-05-10 17:13:33.480 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_4 :: GV0 to 1 UOM 25
+2025-05-10 17:13:33.524 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_6 :: GV0 to 1 UOM 25
+2025-05-10 17:13:33.580 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_7 :: GV0 to 0 UOM 25
+2025-05-10 17:14:31.782 MQTT       udi_interface.interface DEBUG    interface:_message: QUEUING incoming message shortPoll
+2025-05-10 17:14:31.782 Command    udi_interface.interface DEBUG    interface:_parseInput: DEQUEING shortPoll
+2025-05-10 17:14:31.782 Command    udi_interface.interface DEBUG    interface:_handleInput: PROCESS shortPoll message {} from Polyglot
+2025-05-10 17:14:32.078 Thread-161 (poll) udi_interface.node DEBUG    node:setDriver: child_12:James Room Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:14:32.078 Thread-161 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.078 Thread-161 (poll) udi_interface.node DEBUG    node:setDriver: child_12:James Room Floor Lamp Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:14:32.078 Thread-161 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:14:32.079 Thread-163 (poll) udi_interface.node DEBUG    node:setDriver: child_14:Living Room Cabinet Reporting set ST to 1 to Polyglot
+2025-05-10 17:14:32.079 Thread-163 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.079 Thread-163 (poll) udi_interface.node DEBUG    node:setDriver: child_14:Living Room Cabinet Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:14:32.079 Thread-163 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.081 Thread-158 (poll) udi_interface.node DEBUG    node:setDriver: child_9:Guest Room Floor Top Reporting set ST to 1 to Polyglot
+2025-05-10 17:14:32.081 Thread-156 (poll) udi_interface.node DEBUG    node:setDriver: child_7:Guest Room Floor Up Reporting set ST to 1 to Polyglot
+2025-05-10 17:14:32.082 Thread-158 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.082 Thread-162 (poll) udi_interface.node DEBUG    node:setDriver: child_13:Office Floor Lamp (G) Reporting set ST to 1 to Polyglot
+2025-05-10 17:14:32.082 Thread-157 (poll) udi_interface.node DEBUG    node:setDriver: child_8:Guest Room Floor Base Reporting set ST to 1 to Polyglot
+2025-05-10 17:14:32.082 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_12', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.082 Thread-156 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.082 Thread-158 (poll) udi_interface.node DEBUG    node:setDriver: child_9:Guest Room Floor Top Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:14:32.082 Thread-162 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.082 Thread-157 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.083 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_12', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.083 Thread-156 (poll) udi_interface.node DEBUG    node:setDriver: child_7:Guest Room Floor Up Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:14:32.083 Thread-158 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.083 Thread-162 (poll) udi_interface.node DEBUG    node:setDriver: child_13:Office Floor Lamp (G) Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:14:32.083 Thread-157 (poll) udi_interface.node DEBUG    node:setDriver: child_8:Guest Room Floor Base Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:14:32.083 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_14', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.083 Thread-156 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:14:32.084 Thread-162 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:14:32.084 Thread-157 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:14:32.085 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_14', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.085 Thread-150 (poll) udi_interface.node DEBUG    node:setDriver: child_1:Master Bed Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:14:32.086 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_9', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.086 Thread-150 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.086 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_7', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.086 Thread-150 (poll) udi_interface.node DEBUG    node:setDriver: child_1:Master Bed Floor Lamp Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:14:32.086 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_13', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.086 Thread-150 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.087 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_8', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.087 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_9', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.087 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_7', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.087 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_13', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.088 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_8', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.088 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_1', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.088 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_1', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.109 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_12 :: ST to 1 UOM 25
+2025-05-10 17:14:32.118 Thread-155 (poll) udi_interface.node DEBUG    node:setDriver: child_6:Office Light Bars Reporting set ST to 1 to Polyglot
+2025-05-10 17:14:32.119 Thread-155 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.119 Thread-155 (poll) udi_interface.node DEBUG    node:setDriver: child_6:Office Light Bars Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:14:32.119 Thread-155 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.119 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_6', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.120 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_6', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.121 Thread-153 (poll) udi_interface.node DEBUG    node:setDriver: child_4:Gaming Desk LED Strip Reporting set ST to 1 to Polyglot
+2025-05-10 17:14:32.121 Thread-153 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.121 Thread-153 (poll) udi_interface.node DEBUG    node:setDriver: child_4:Gaming Desk LED Strip Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:14:32.121 Thread-153 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.128 Thread-160 (poll) udi_interface.node DEBUG    node:setDriver: child_11:Guest Room Cabinet Top Reporting set ST to 1 to Polyglot
+2025-05-10 17:14:32.129 Thread-160 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.129 Thread-154 (poll) udi_interface.node DEBUG    node:setDriver: child_5:Family Room TV Back Reporting set ST to 1 to Polyglot
+2025-05-10 17:14:32.129 Thread-160 (poll) udi_interface.node DEBUG    node:setDriver: child_11:Guest Room Cabinet Top Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:14:32.129 Thread-151 (poll) udi_interface.node DEBUG    node:setDriver: child_2:Guest Room Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:14:32.129 Thread-154 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.129 Thread-160 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.129 Thread-151 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.130 Thread-154 (poll) udi_interface.node DEBUG    node:setDriver: child_5:Family Room TV Back Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:14:32.130 Thread-151 (poll) udi_interface.node DEBUG    node:setDriver: child_2:Guest Room Floor Lamp Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:14:32.130 Thread-154 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.130 Thread-151 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.130 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_4', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.131 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_4', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.131 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_11', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.131 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_5', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.131 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_11', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.131 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_2', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.132 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_5', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.132 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_2', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.158 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_12 :: GV0 to 0 UOM 25
+2025-05-10 17:14:32.247 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_14 :: ST to 1 UOM 25
+2025-05-10 17:14:32.292 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_14 :: GV0 to 1 UOM 25
+2025-05-10 17:14:32.355 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_9 :: ST to 1 UOM 25
+2025-05-10 17:14:32.395 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_7 :: ST to 1 UOM 25
+2025-05-10 17:14:32.401 Thread-159 (poll) udi_interface.node DEBUG    node:setDriver: child_10:Guest Room Floor Lower Reporting set ST to 1 to Polyglot
+2025-05-10 17:14:32.402 Thread-159 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.402 Thread-159 (poll) udi_interface.node DEBUG    node:setDriver: child_10:Guest Room Floor Lower Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:14:32.402 Thread-159 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.407 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_10', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.407 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_10', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.409 Thread-149 (poll) udi_interface.node DEBUG    node:setDriver: child_0:Office Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:14:32.409 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_13 :: ST to 1 UOM 25
+2025-05-10 17:14:32.409 Thread-149 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.409 Thread-149 (poll) udi_interface.node DEBUG    node:setDriver: child_0:Office Floor Lamp Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:14:32.409 Thread-149 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.410 Thread-152 (poll) udi_interface.node DEBUG    node:setDriver: child_3:Office Glide Hexa Reporting set ST to 1 to Polyglot
+2025-05-10 17:14:32.410 Thread-152 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.410 Thread-152 (poll) udi_interface.node DEBUG    node:setDriver: child_3:Office Glide Hexa Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:14:32.410 Thread-152 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:14:32.418 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_0', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.419 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_0', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.419 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_3', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.419 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_3', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:14:32.457 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_8 :: ST to 1 UOM 25
+2025-05-10 17:14:32.555 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_9 :: GV0 to 1 UOM 25
+2025-05-10 17:14:32.595 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_7 :: GV0 to 0 UOM 25
+2025-05-10 17:14:32.654 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_13 :: GV0 to 0 UOM 25
+2025-05-10 17:14:32.694 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_8 :: GV0 to 0 UOM 25
+2025-05-10 17:14:32.753 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_1 :: ST to 1 UOM 25
+2025-05-10 17:14:32.793 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_1 :: GV0 to 1 UOM 25
+2025-05-10 17:14:32.848 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_6 :: ST to 1 UOM 25
+2025-05-10 17:14:32.895 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_6 :: GV0 to 1 UOM 25
+2025-05-10 17:14:32.949 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_4 :: ST to 1 UOM 25
+2025-05-10 17:14:33.000 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_4 :: GV0 to 1 UOM 25
+2025-05-10 17:14:33.048 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_11 :: ST to 1 UOM 25
+2025-05-10 17:14:33.089 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_5 :: ST to 1 UOM 25
+2025-05-10 17:14:33.144 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_11 :: GV0 to 1 UOM 25
+2025-05-10 17:14:33.193 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_2 :: ST to 1 UOM 25
+2025-05-10 17:14:33.248 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_5 :: GV0 to 1 UOM 25
+2025-05-10 17:14:33.291 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_2 :: GV0 to 1 UOM 25
+2025-05-10 17:14:33.346 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_10 :: ST to 1 UOM 25
+2025-05-10 17:14:33.392 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_10 :: GV0 to 1 UOM 25
+2025-05-10 17:14:33.447 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_0 :: ST to 1 UOM 25
+2025-05-10 17:14:33.492 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_0 :: GV0 to 1 UOM 25
+2025-05-10 17:14:33.547 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_3 :: ST to 1 UOM 25
+2025-05-10 17:14:33.597 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_3 :: GV0 to 1 UOM 25
+2025-05-10 17:15:31.782 MQTT       udi_interface.interface DEBUG    interface:_message: QUEUING incoming message shortPoll
+2025-05-10 17:15:31.782 Command    udi_interface.interface DEBUG    interface:_parseInput: DEQUEING shortPoll
+2025-05-10 17:15:31.783 Command    udi_interface.interface DEBUG    interface:_handleInput: PROCESS shortPoll message {} from Polyglot
+2025-05-10 17:15:32.078 Thread-171 (poll) udi_interface.node DEBUG    node:setDriver: child_6:Office Light Bars Reporting set ST to 1 to Polyglot
+2025-05-10 17:15:32.080 Thread-168 (poll) udi_interface.node DEBUG    node:setDriver: child_3:Office Glide Hexa Reporting set ST to 1 to Polyglot
+2025-05-10 17:15:32.081 Thread-169 (poll) udi_interface.node DEBUG    node:setDriver: child_4:Gaming Desk LED Strip Reporting set ST to 1 to Polyglot
+2025-05-10 17:15:32.081 Thread-174 (poll) udi_interface.node DEBUG    node:setDriver: child_9:Guest Room Floor Top Reporting set ST to 1 to Polyglot
+2025-05-10 17:15:32.081 Thread-166 (poll) udi_interface.node DEBUG    node:setDriver: child_1:Master Bed Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:15:32.081 Thread-171 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.081 Thread-165 (poll) udi_interface.node DEBUG    node:setDriver: child_0:Office Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:15:32.081 Thread-168 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.082 Thread-169 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.082 Thread-174 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.082 Thread-166 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.082 Thread-171 (poll) udi_interface.node DEBUG    node:setDriver: child_6:Office Light Bars Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:15:32.082 Thread-165 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.082 Thread-168 (poll) udi_interface.node DEBUG    node:setDriver: child_3:Office Glide Hexa Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:15:32.082 Thread-169 (poll) udi_interface.node DEBUG    node:setDriver: child_4:Gaming Desk LED Strip Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:15:32.082 Thread-174 (poll) udi_interface.node DEBUG    node:setDriver: child_9:Guest Room Floor Top Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:15:32.082 Thread-166 (poll) udi_interface.node DEBUG    node:setDriver: child_1:Master Bed Floor Lamp Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:15:32.082 Thread-171 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.083 Thread-165 (poll) udi_interface.node DEBUG    node:setDriver: child_0:Office Floor Lamp Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:15:32.083 Thread-168 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.083 Thread-169 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.083 Thread-174 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.083 Thread-166 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.083 Thread-165 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.085 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_6', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.086 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_3', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.086 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_4', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.086 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_9', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.086 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_1', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.086 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_0', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.087 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_6', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.087 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_3', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.087 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_4', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.087 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_9', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.088 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_1', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.088 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_0', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.098 Thread-175 (poll) udi_interface.node DEBUG    node:setDriver: child_10:Guest Room Floor Lower Reporting set ST to 1 to Polyglot
+2025-05-10 17:15:32.098 Thread-172 (poll) udi_interface.node DEBUG    node:setDriver: child_7:Guest Room Floor Up Reporting set ST to 1 to Polyglot
+2025-05-10 17:15:32.099 Thread-175 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.099 Thread-172 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.099 Thread-175 (poll) udi_interface.node DEBUG    node:setDriver: child_10:Guest Room Floor Lower Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:15:32.099 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_10', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.099 Thread-172 (poll) udi_interface.node DEBUG    node:setDriver: child_7:Guest Room Floor Up Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:15:32.099 Thread-175 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.099 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_7', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.099 Thread-172 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:15:32.100 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_10', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.100 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_7', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.104 Thread-179 (poll) udi_interface.node DEBUG    node:setDriver: child_14:Living Room Cabinet Reporting set ST to 1 to Polyglot
+2025-05-10 17:15:32.106 Thread-177 (poll) udi_interface.node DEBUG    node:setDriver: child_12:James Room Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:15:32.106 Thread-176 (poll) udi_interface.node DEBUG    node:setDriver: child_11:Guest Room Cabinet Top Reporting set ST to 1 to Polyglot
+2025-05-10 17:15:32.106 Thread-178 (poll) udi_interface.node DEBUG    node:setDriver: child_13:Office Floor Lamp (G) Reporting set ST to 1 to Polyglot
+2025-05-10 17:15:32.106 Thread-179 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.106 Thread-167 (poll) udi_interface.node DEBUG    node:setDriver: child_2:Guest Room Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:15:32.106 Thread-177 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.106 Thread-176 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.106 Thread-178 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.106 Thread-179 (poll) udi_interface.node DEBUG    node:setDriver: child_14:Living Room Cabinet Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:15:32.106 Thread-167 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.107 Thread-177 (poll) udi_interface.node DEBUG    node:setDriver: child_12:James Room Floor Lamp Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:15:32.107 Thread-176 (poll) udi_interface.node DEBUG    node:setDriver: child_11:Guest Room Cabinet Top Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:15:32.107 Thread-178 (poll) udi_interface.node DEBUG    node:setDriver: child_13:Office Floor Lamp (G) Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:15:32.107 Thread-179 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.107 Thread-167 (poll) udi_interface.node DEBUG    node:setDriver: child_2:Guest Room Floor Lamp Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:15:32.107 Thread-167 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.107 Thread-177 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:15:32.107 Thread-178 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:15:32.107 Thread-176 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.109 Thread-173 (poll) udi_interface.node DEBUG    node:setDriver: child_8:Guest Room Floor Base Reporting set ST to 1 to Polyglot
+2025-05-10 17:15:32.110 Thread-173 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.110 Thread-173 (poll) udi_interface.node DEBUG    node:setDriver: child_8:Guest Room Floor Base Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:15:32.111 Thread-170 (poll) udi_interface.node DEBUG    node:setDriver: child_5:Family Room TV Back Reporting set ST to 1 to Polyglot
+2025-05-10 17:15:32.111 Thread-173 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:15:32.111 Thread-170 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.111 Thread-170 (poll) udi_interface.node DEBUG    node:setDriver: child_5:Family Room TV Back Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:15:32.111 Thread-170 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:15:32.111 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_14', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.111 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_12', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.112 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_11', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.112 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_13', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.112 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_2', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.112 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_14', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.112 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_2', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.112 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_12', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.113 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_13', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.113 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_11', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.113 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_8', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.113 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_8', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.113 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_5', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.114 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_5', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:15:32.116 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_6 :: ST to 1 UOM 25
+2025-05-10 17:15:32.159 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_3 :: ST to 1 UOM 25
+2025-05-10 17:15:32.250 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_4 :: ST to 1 UOM 25
+2025-05-10 17:15:32.298 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_9 :: ST to 1 UOM 25
+2025-05-10 17:15:32.397 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_1 :: ST to 1 UOM 25
+2025-05-10 17:15:32.440 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_0 :: ST to 1 UOM 25
+2025-05-10 17:15:32.481 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_6 :: GV0 to 1 UOM 25
+2025-05-10 17:15:32.526 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_3 :: GV0 to 1 UOM 25
+2025-05-10 17:15:32.577 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_4 :: GV0 to 1 UOM 25
+2025-05-10 17:15:32.620 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_9 :: GV0 to 1 UOM 25
+2025-05-10 17:15:32.662 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_1 :: GV0 to 1 UOM 25
+2025-05-10 17:15:32.705 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_0 :: GV0 to 1 UOM 25
+2025-05-10 17:15:32.758 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_10 :: ST to 1 UOM 25
+2025-05-10 17:15:32.801 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_7 :: ST to 1 UOM 25
+2025-05-10 17:15:32.857 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_10 :: GV0 to 1 UOM 25
+2025-05-10 17:15:32.898 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_7 :: GV0 to 0 UOM 25
+2025-05-10 17:15:32.952 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_14 :: ST to 1 UOM 25
+2025-05-10 17:15:32.997 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_12 :: ST to 1 UOM 25
+2025-05-10 17:15:33.059 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_11 :: ST to 1 UOM 25
+2025-05-10 17:15:33.099 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_13 :: ST to 1 UOM 25
+2025-05-10 17:15:33.151 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_2 :: ST to 1 UOM 25
+2025-05-10 17:15:33.195 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_14 :: GV0 to 1 UOM 25
+2025-05-10 17:15:33.253 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_2 :: GV0 to 1 UOM 25
+2025-05-10 17:15:33.299 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_12 :: GV0 to 0 UOM 25
+2025-05-10 17:15:33.354 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_13 :: GV0 to 0 UOM 25
+2025-05-10 17:15:33.397 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_11 :: GV0 to 1 UOM 25
+2025-05-10 17:15:33.450 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_8 :: ST to 1 UOM 25
+2025-05-10 17:15:33.492 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_8 :: GV0 to 0 UOM 25
+2025-05-10 17:15:33.549 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_5 :: ST to 1 UOM 25
+2025-05-10 17:15:33.592 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_5 :: GV0 to 1 UOM 25
+2025-05-10 17:16:31.783 MQTT       udi_interface.interface DEBUG    interface:_message: QUEUING incoming message shortPoll
+2025-05-10 17:16:31.784 Command    udi_interface.interface DEBUG    interface:_parseInput: DEQUEING shortPoll
+2025-05-10 17:16:31.784 Command    udi_interface.interface DEBUG    interface:_handleInput: PROCESS shortPoll message {} from Polyglot
+2025-05-10 17:16:32.078 Thread-193 (poll) udi_interface.node DEBUG    node:setDriver: child_12:James Room Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:16:32.078 Thread-189 (poll) udi_interface.node DEBUG    node:setDriver: child_8:Guest Room Floor Base Reporting set ST to 1 to Polyglot
+2025-05-10 17:16:32.078 Thread-193 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.079 Thread-182 (poll) udi_interface.node DEBUG    node:setDriver: child_1:Master Bed Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:16:32.079 Thread-183 (poll) udi_interface.node DEBUG    node:setDriver: child_2:Guest Room Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:16:32.079 Thread-189 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.080 Thread-193 (poll) udi_interface.node DEBUG    node:setDriver: child_12:James Room Floor Lamp Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:16:32.080 Thread-194 (poll) udi_interface.node DEBUG    node:setDriver: child_13:Office Floor Lamp (G) Reporting set ST to 1 to Polyglot
+2025-05-10 17:16:32.080 Thread-195 (poll) udi_interface.node DEBUG    node:setDriver: child_14:Living Room Cabinet Reporting set ST to 1 to Polyglot
+2025-05-10 17:16:32.080 Thread-182 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.080 Thread-183 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.080 Thread-189 (poll) udi_interface.node DEBUG    node:setDriver: child_8:Guest Room Floor Base Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:16:32.081 Thread-193 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:16:32.081 Thread-184 (poll) udi_interface.node DEBUG    node:setDriver: child_3:Office Glide Hexa Reporting set ST to 1 to Polyglot
+2025-05-10 17:16:32.081 Thread-194 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.081 Thread-195 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.081 Thread-182 (poll) udi_interface.node DEBUG    node:setDriver: child_1:Master Bed Floor Lamp Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:16:32.081 Thread-183 (poll) udi_interface.node DEBUG    node:setDriver: child_2:Guest Room Floor Lamp Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:16:32.081 Thread-189 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:16:32.082 Thread-184 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.082 Thread-194 (poll) udi_interface.node DEBUG    node:setDriver: child_13:Office Floor Lamp (G) Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:16:32.082 Thread-195 (poll) udi_interface.node DEBUG    node:setDriver: child_14:Living Room Cabinet Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:16:32.082 Thread-182 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.082 Thread-183 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.082 Thread-184 (poll) udi_interface.node DEBUG    node:setDriver: child_3:Office Glide Hexa Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:16:32.082 Thread-194 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:16:32.082 Thread-195 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.082 Thread-184 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.083 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_12', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.083 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_8', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.083 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_1', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.084 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_2', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.084 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_12', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.084 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_13', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.084 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_14', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.084 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_8', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.085 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_3', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.085 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_1', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.085 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_2', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.085 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_13', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.085 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_14', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.085 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_3', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.096 Thread-181 (poll) udi_interface.node DEBUG    node:setDriver: child_0:Office Floor Lamp Reporting set ST to 1 to Polyglot
+2025-05-10 17:16:32.097 Thread-181 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.097 Thread-181 (poll) udi_interface.node DEBUG    node:setDriver: child_0:Office Floor Lamp Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:16:32.097 Thread-181 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.097 Thread-187 (poll) udi_interface.node DEBUG    node:setDriver: child_6:Office Light Bars Reporting set ST to 1 to Polyglot
+2025-05-10 17:16:32.098 Thread-187 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.098 Thread-185 (poll) udi_interface.node DEBUG    node:setDriver: child_4:Gaming Desk LED Strip Reporting set ST to 1 to Polyglot
+2025-05-10 17:16:32.098 Thread-187 (poll) udi_interface.node DEBUG    node:setDriver: child_6:Office Light Bars Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:16:32.098 Thread-185 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.098 Thread-187 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.098 Thread-185 (poll) udi_interface.node DEBUG    node:setDriver: child_4:Gaming Desk LED Strip Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:16:32.099 Thread-185 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.101 Thread-186 (poll) udi_interface.node DEBUG    node:setDriver: child_5:Family Room TV Back Reporting set ST to 1 to Polyglot
+2025-05-10 17:16:32.102 Thread-186 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.102 Thread-192 (poll) udi_interface.node DEBUG    node:setDriver: child_11:Guest Room Cabinet Top Reporting set ST to 1 to Polyglot
+2025-05-10 17:16:32.102 Thread-186 (poll) udi_interface.node DEBUG    node:setDriver: child_5:Family Room TV Back Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:16:32.103 Thread-192 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.103 Thread-191 (poll) udi_interface.node DEBUG    node:setDriver: child_10:Guest Room Floor Lower Reporting set ST to 1 to Polyglot
+2025-05-10 17:16:32.103 Thread-186 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.103 Thread-192 (poll) udi_interface.node DEBUG    node:setDriver: child_11:Guest Room Cabinet Top Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:16:32.104 Thread-191 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.104 Thread-188 (poll) udi_interface.node DEBUG    node:setDriver: child_7:Guest Room Floor Up Reporting set ST to 1 to Polyglot
+2025-05-10 17:16:32.104 Thread-192 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.104 Thread-191 (poll) udi_interface.node DEBUG    node:setDriver: child_10:Guest Room Floor Lower Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:16:32.104 Thread-188 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.104 Thread-191 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.105 Thread-188 (poll) udi_interface.node DEBUG    node:setDriver: child_7:Guest Room Floor Up Reporting set GV0 to 0 to Polyglot
+2025-05-10 17:16:32.105 Thread-188 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 0
+2025-05-10 17:16:32.107 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_0', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.107 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_0', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.108 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_6', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.108 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_4', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.108 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_6', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.108 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_4', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.108 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_5', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.109 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_11', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.109 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_5', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.109 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_10', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.109 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_11', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.109 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_7', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.109 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_10', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.110 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_7', 'driver': 'GV0', 'value': '0', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.120 Thread-190 (poll) udi_interface.node DEBUG    node:setDriver: child_9:Guest Room Floor Top Reporting set ST to 1 to Polyglot
+2025-05-10 17:16:32.120 Thread-190 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.120 Thread-190 (poll) udi_interface.node DEBUG    node:setDriver: child_9:Guest Room Floor Top Reporting set GV0 to 1 to Polyglot
+2025-05-10 17:16:32.120 Thread-190 (poll) udi_interface.node DEBUG    node:reportDriver: Updating value to 1
+2025-05-10 17:16:32.129 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_12 :: ST to 1 UOM 25
+2025-05-10 17:16:32.131 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_9', 'driver': 'ST', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.131 Thread-1 (send_thread) udi_interface.interface DEBUG    interface:_send: PUBLISHING {'set': [{'address': 'child_9', 'driver': 'GV0', 'value': '1', 'uom': 25, 'text': None}]}
+2025-05-10 17:16:32.160 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_8 :: ST to 1 UOM 25
+2025-05-10 17:16:32.249 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_1 :: ST to 1 UOM 25
+2025-05-10 17:16:32.290 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_2 :: ST to 1 UOM 25
+2025-05-10 17:16:32.332 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_12 :: GV0 to 0 UOM 25
+2025-05-10 17:16:32.372 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_13 :: ST to 1 UOM 25
+2025-05-10 17:16:32.452 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_14 :: ST to 1 UOM 25
+2025-05-10 17:16:32.493 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_8 :: GV0 to 0 UOM 25
+2025-05-10 17:16:32.544 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_3 :: ST to 1 UOM 25
+2025-05-10 17:16:32.587 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_1 :: GV0 to 1 UOM 25
+2025-05-10 17:16:32.629 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_2 :: GV0 to 1 UOM 25
+2025-05-10 17:16:32.672 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_13 :: GV0 to 0 UOM 25
+2025-05-10 17:16:32.754 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_14 :: GV0 to 1 UOM 25
+2025-05-10 17:16:32.798 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_3 :: GV0 to 1 UOM 25
+2025-05-10 17:16:32.838 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_0 :: ST to 1 UOM 25
+2025-05-10 17:16:32.935 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_0 :: GV0 to 1 UOM 25
+2025-05-10 17:16:32.977 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_6 :: ST to 1 UOM 25
+2025-05-10 17:16:33.025 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_4 :: ST to 1 UOM 25
+2025-05-10 17:16:33.066 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_6 :: GV0 to 1 UOM 25
+2025-05-10 17:16:33.107 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_4 :: GV0 to 1 UOM 25
+2025-05-10 17:16:33.155 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_5 :: ST to 1 UOM 25
+2025-05-10 17:16:33.204 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_11 :: ST to 1 UOM 25
+2025-05-10 17:16:33.250 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_5 :: GV0 to 1 UOM 25
+2025-05-10 17:16:33.296 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_10 :: ST to 1 UOM 25
+2025-05-10 17:16:33.346 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_11 :: GV0 to 1 UOM 25
+2025-05-10 17:16:33.388 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_7 :: ST to 1 UOM 25
+2025-05-10 17:16:33.431 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_10 :: GV0 to 1 UOM 25
+2025-05-10 17:16:33.474 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_7 :: GV0 to 0 UOM 25
+2025-05-10 17:16:33.547 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_9 :: ST to 1 UOM 25
+2025-05-10 17:16:33.622 MQTT       udi_interface.interface INFO     interface:_message: Successfully set child_9 :: GV0 to 1 UOM 25
