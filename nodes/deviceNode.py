@@ -9,6 +9,7 @@ import udi_interface
 import sys
 import rest
 import time
+import asyncio
 
 LOGGER = udi_interface.LOGGER
 Custom = udi_interface.Custom
@@ -41,7 +42,12 @@ class Light(udi_interface.Node):
         state = rest.query('devices/state', {
             'device': self.api_address,
             'model': self.model
-        })['data']
+        })
+
+        if state is None:
+            LOGGER.error(f'Failed to get state for {self.name}')
+            return
+        state = state['data']
 
         deviceState = state['properties'][0]['online']
         self.setDriver('ST', int(deviceState != 'false'), True, True)
@@ -60,13 +66,8 @@ class Light(udi_interface.Node):
 
     def on(self, command):
         self.setState('on')
-        time.sleep(1)
-        self.updateState()
-
 
     def off(self, command):
         self.setState('off')
-        time.sleep(1)
-        self.updateState()
     
     commands = {'DFON': on, 'DFOF': off}
